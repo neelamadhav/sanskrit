@@ -1,0 +1,10 @@
+package cse.iitd;
+
+import com.sktutilities.util.EncodingUtil;
+
+
+public class SanskritTransliteration {
+   public static void main(String[] args) {
+	   EncodingUtil.convertDevanagariToSLP("विनोदिनी");
+   }
+}
