@@ -10,8 +10,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 
-import com.sktutilities.util.EncodingUtil;
-
 public class SanskritTransliteration {
 	public static void main(String[] args) throws IOException {
 		// String data =
