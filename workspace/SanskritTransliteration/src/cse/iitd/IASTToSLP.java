@@ -1,6 +1,5 @@
 package cse.iitd;
 
-import com.sktutilities.util.Log;
 
 public class IASTToSLP
 {
@@ -12,7 +11,7 @@ public class IASTToSLP
 public static String transform(String transformed)
     {
     transformed = transformed.toLowerCase();
-    Log.logInfo("IASTToSLP: " + transformed  );
+    System.out.println("IASTToSLP: " + transformed  );
     //Ä�
     // Vowels
     transformed = transformed.replaceAll( "Ä�","A" ); 

@@ -16,21 +16,31 @@ public class SanskritTransliteration {
 		// convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\sanskrit\\python\\input.txt");
 		// System.out.println(EncodingUtil.convertDevanagariToSLP(data).replaceAll("#####",
 		// "\n"));
+		String inputFile = "C:\\Users\\IBM_ADMIN\\Desktop\\sanskrit\\python\\output.txt";
+		String outputFile = "C:\\Users\\IBM_ADMIN\\Desktop\\sanskrit\\python\\output1.txt";
+		String inputCharSet = "SLP";
+		String outputCharSet = "DVN";
 
-		if (args.length < 5)
-			System.out.println("Usage...");
-		else {
-			if (args[4].equalsIgnoreCase("Devanagari")) {
-				String data = convertFromFile(args[1]);
-				writeToFile(EncodingUtil.convertToDVN(data, args[3]).replaceAll("#####", "\n"), args[2]);
-			} else if (args[4].equalsIgnoreCase("SLP")) {
-				String data = convertFromFile(args[1]);
-				writeToFile(EncodingUtil.convertToSLP(data, args[3]).replaceAll("#####", "\n"), args[2]);
-			} else if (args[4].equalsIgnoreCase("IAST")) {
-				String data = convertFromFile(args[1]);
-				writeToFile(EncodingUtil.convertToIAST(data, args[3]).replaceAll("#####", "\n"), args[2]);
-			} 
+		if (args.length > 5){
+			inputFile = args[1];
+			outputFile = args[2];
+			inputCharSet = args[3];
+			outputCharSet = args[4];
 		}
+		
+		if (outputCharSet.equalsIgnoreCase("DVN")) {
+			String data = convertFromFile(inputFile);
+			String transData = EncodingUtil.convertToDVN(data, inputCharSet).replaceAll("#####", "\n");
+			writeToFile(transData, outputFile);
+		} else if (outputCharSet.equalsIgnoreCase("SLP")) {
+			String data = convertFromFile(inputFile);
+			String transData = EncodingUtil.convertToSLP(data, inputCharSet).replaceAll("#####", "\n");
+			writeToFile(transData, outputFile);
+		} else if (outputCharSet.equalsIgnoreCase("IAST")) {
+			String data = convertFromFile(inputFile);
+			String transData = EncodingUtil.convertToIAST(data, inputCharSet)	.replaceAll("#####", "\n");
+			writeToFile(transData, outputFile);
+		} 
 	}
 
 	public static String convertFromFile(String filePath) throws IOException {

@@ -1,8 +1,7 @@
 package cse.iitd;
 
-import com.sktutilities.util.*;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Hashtable;
 
 public class SLPToDevanagari
 {

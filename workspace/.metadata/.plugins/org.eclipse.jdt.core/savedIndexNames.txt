@@ -7,7 +7,6 @@ INDEX VERSION 1.127+C:\Users\IBM_ADMIN\Desktop\sanskrit\workspace\.metadata\.plu
 2921250600.index
 1738363733.index
 1524953806.index
-3488217569.index
 1063367808.index
 1000147613.index
 1094395942.index

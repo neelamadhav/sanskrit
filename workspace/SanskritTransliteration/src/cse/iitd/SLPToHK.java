@@ -1,6 +1,5 @@
 package cse.iitd;
 
-import com.sktutilities.util.Log;
 
 public class SLPToHK
 {
@@ -9,7 +8,7 @@ public class SLPToHK
         {
         
         String transformed = s1;
-        Log.logInfo("SLPToItrans: " + s1  );
+        System.out.println("SLPToItrans: " + s1  );
 
         transformed = transformed.replaceAll("N","0");  
         transformed = transformed.replaceAll("Y","1");          
@@ -53,7 +52,7 @@ public class SLPToHK
         transformed = transformed.replaceAll("0","G");  
         transformed = transformed.replaceAll("1","J"); 
         
-        Log.logInfo("SLPToItrans: transformed" + s1 + " = " + transformed );            
+        System.out.println("SLPToItrans: transformed" + s1 + " = " + transformed );            
         return transformed; // return transformed;
         }
 

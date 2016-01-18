@@ -3,9 +3,6 @@ package cse.iitd;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import com.sktutilities.util.Log;
-import com.sktutilities.util.VowelUtil;
-
 
 public class DvnToSLP
 {
@@ -124,7 +121,7 @@ public class DvnToSLP
             {
                 shabda.add(unicode.get(varna));
                 lastEntry = unicode.get(varna);
-                Log.logInfo("words now is " +  listToString(shabda));
+                System.out.println("words now is " +  listToString(shabda));
             }
             else if (matra.containsKey(varna))
             {
