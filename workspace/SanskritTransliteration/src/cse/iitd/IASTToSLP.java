@@ -14,19 +14,19 @@ public static String transform(String transformed)
     System.out.println("IASTToSLP: " + transformed  );
     //Ä�
     // Vowels
-    transformed = transformed.replaceAll( "Ä�","A" ); 
-    transformed = transformed.replaceAll("Ä«" ,"I"); 
-    transformed = transformed.replaceAll( "Å«", "U");
-    transformed = transformed.replaceAll("á¹›" ,"f"); 
-    transformed = transformed.replaceAll( "á¹�" , "F"); 
-    transformed = transformed.replaceAll( "á¸·", "x"); 
-    transformed = transformed.replaceAll( "á¸¹", "X"); 
+    transformed = transformed.replaceAll( "ā","A" ); 
+    transformed = transformed.replaceAll("ī" ,"I"); 
+    transformed = transformed.replaceAll( "ū", "U");
+    transformed = transformed.replaceAll("ṛ" ,"f"); 
+    transformed = transformed.replaceAll( "ṝ" , "F"); 
+    transformed = transformed.replaceAll( "ḷ", "x"); 
+    transformed = transformed.replaceAll( "ḹ", "X"); 
    
     transformed = transformed.replaceAll("ai","E");
     transformed = transformed.replaceAll("au","O");
     
-    transformed = transformed.replaceAll( "á¸¥", "H"); 
-    transformed = transformed.replaceAll( "á¹ƒ","M");
+    transformed = transformed.replaceAll( "ḥ", "H"); 
+    transformed = transformed.replaceAll( "ṃ","M");
     
     transformed = transformed.replaceAll("kh","K");
     transformed = transformed.replaceAll("gh","G");
@@ -35,12 +35,12 @@ public static String transform(String transformed)
     transformed = transformed.replaceAll("jh","J");
 
 
-    transformed = transformed.replaceAll( "á¹­h", "W");
-    transformed = transformed.replaceAll( "á¹­", "w");  
+    transformed = transformed.replaceAll( "ṭh", "W");
+    transformed = transformed.replaceAll( "ṭ", "w");  
     
-    transformed = transformed.replaceAll( "á¸�h" , "Q");
+    transformed = transformed.replaceAll( "ḍh" , "Q");
     // vargiyas
-    transformed = transformed.replaceAll( "á¸�" , "q"); 
+    transformed = transformed.replaceAll( "ḍ" , "q"); 
 
     transformed = transformed.replaceAll("th","T"); 
     transformed = transformed.replaceAll("dh","D"); 
@@ -49,23 +49,23 @@ public static String transform(String transformed)
     transformed = transformed.replaceAll( "bh", "B"); 
 
     // Nasals:
-    transformed = transformed.replaceAll( "Ã±","Y"); // represents
+    transformed = transformed.replaceAll( "ñ","Y"); // represents
     // SLP
     // "Y"(jYaana)
-    transformed = transformed.replaceAll( "á¹…","N"); // represents
+    transformed = transformed.replaceAll( "ṅ","N"); // represents
     // SLP
     // "N"(kalaNka)
-    transformed = transformed.replaceAll( "á¹‡","R"); // represents
+    transformed = transformed.replaceAll( "ṇ","R"); // represents
     // SLP
     // "R"(N)
-    transformed = transformed.replaceAll("Å›", "S"); // represents
+    transformed = transformed.replaceAll("ś", "S"); // represents
     // SLP
     // "S"(Sh
     // as
     // in
     // Sharma)
 
-    transformed = transformed.replaceAll("á¹£","z"); // represents
+    transformed = transformed.replaceAll("ṣ","z"); // represents
     // SLP
     // "z"(kzaNa)
     return transformed;

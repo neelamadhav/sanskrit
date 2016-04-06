@@ -6,25 +6,34 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Util" key="selection"/>
+		<item value="convertFromFile" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Util"/>
-			<item value="TransliteratorForm"/>
-			<item value="SpringUtil"/>
-			<item value="DictionaryService"/>
+			<item value="convertFromFile"/>
+			<item value="iast"/>
+			<item value="vel"/>
+			<item value="IAST"/>
+			<item value="consIN"/>
+			<item value="1a"/>
+			<item value="origC"/>
+			<item value="{i}"/>
 		</list>
 		<list key="replacehistory">
+			<item value="[i]"/>
+			<item value="[j]"/>
+			<item value="}"/>
+			<item value="{"/>
+			<item value="&quot;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="716" key="DIALOG_X_ORIGIN"/>
-		<item value="189" key="DIALOG_Y_ORIGIN"/>
+		<item value="710" key="DIALOG_X_ORIGIN"/>
+		<item value="198" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -17,6 +17,8 @@ public class EncodingUtil
     public static String UNICODE_DVN     = "DVN";
     
     public static String IAST     = "IAST";
+    
+    public static String IAST1     = "IAST1";
 
     public EncodingUtil()
     {
@@ -96,6 +98,11 @@ public class EncodingUtil
     public static String convertIASTToSLP(String alter)
     {
         return IASTToSLP.transform(alter);
+    }
+    
+    public static String convertIAST1ToSLP(String alter)
+    {
+        return IAST1ToSLP.transform(alter);
     }
 
     public static String convertIASTToUniformItrans(String alter)

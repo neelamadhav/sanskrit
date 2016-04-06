@@ -1,8 +1,0 @@
-package cse.iitd;
-
-
-public class SanskritTransliteration(){
-	public static void main(String[] agrs) {
-	
-	}
-}
